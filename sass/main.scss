@@ -1,0 +1,23 @@
+@import "./variables.scss";
+@import "./form.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+

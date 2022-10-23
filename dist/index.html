@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Form Schorm</title>
+</head>
+<body>
+    <aside>
+        <div class="progress">
+            <p class="progress__status"><span class="progress__status-data">0</span>%</p>
+            <p class="progress__info">completed</p>
+        </div>
+    </aside>
+    <main>
+        <section class="form">
+            <div class="form__copy">
+                <h1 class="form__copy__headline">
+                    Set up your Aubergine account.
+                </h1>
+                <p class="form__copy__paragraph">
+                    You have been invited to join Aubergine, the leading news acclerator. Before you can start diving into the news of the now, please fill in your details. Afterwards we will send you an email to verify your account.
+                </p>
+            </div>
+            <form action="submit" class="form__form">
+
+                <div class="form__form__input">
+                    <input class="form__form__inputfield" id="name" type="text" placeholder="Name">
+                    <p class="error" id="name-error">Please enter a name</p>
+                </div>
+
+                <div class="form__form__input">
+                    <input class="form__form__inputfield" id="email" type="text" placeholder="Email">
+                    <p class="error" id="email-error">Please enter an email</p>
+                </div>
+
+                <div class="form__form__input">
+                    <input class="form__form__inputfield" id="password" type="password" placeholder="Password">
+                    <p class="error" id="password-error">Please enter a password</p>
+                </div>
+
+                <div class="form__form__input">
+                    <input class="form__form__inputfield" id="confirm-pw" type="password" placeholder="Confirm Password">
+                    <p class="error" id="confirmpassword-error">Please confirm password</p>
+                    <p class="error" id="nomatch-error">Passwords do not match</p>
+                </div>
+
+                <label id="checkbox-box" for="checkbox">
+                    <input id="checkbox" type="checkbox">
+                    <p class="checkbox-copy">I agree with everything</p>
+                    <p class="error-check">You have to agree with everything</p>
+                </label>
+
+                <button class="form__form__button" type="submit">Continue</button>
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
